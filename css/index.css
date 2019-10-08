@@ -182,22 +182,30 @@ body {
 }
 
 /* ///INTRODUCTION/// */
+
+.imgcnt {
+  background-color: purple;
+  padding: 5px 5px 5px 5px;
+}
 .introcnt {
   background-color: rgba(151, 175, 191, 0.318);
   border-radius: 10px;
-  padding: 100px 100px 100px 100px;
+  padding: 20px 20px 20px 20px;
 }
 
 .titlecnt {
   background-color: red;
+  padding: 5px 5px 5px 5px;
 }
 
 .subtitlecnt {
   background-color: orange;
+  padding: 5px 5px 5px 5px;
 }
 
 .btncnt {
   background-color: yellow;
+  padding: 5px 5px 5px 5px;
 }
 
 /* ///SKILLS/// */
