@@ -133,6 +133,7 @@ table {
 html,
 body {
   height: 100%;
+  background-color: blue;
 }
 /* ------------------VARIABLES------------------- */
 /* -------------------MIXINS--------------------- */
@@ -148,13 +149,30 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+.bkbl {
+  background-color: blue;
+  border: 1px dashed orange;
+}
+.bkgrn {
+  background-color: green;
+  border: 1px dashed magenta;
+}
+.bkyllw {
+  background-color: yellow;
+  border: 1px dashed turquoise;
+}
+.bkrd {
+  background-color: red;
+  border: 1px dashed greenyellow;
+}
 /* ---------------STYLING STARTS HERE------------ */
 .page {
   margin: 5%;
 }
 /* ///NAVIGATION/// */
 .navbarcnt {
-  background-color: yellow;
+  background-color: blue;
+  border: 1px dashed orange;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -162,6 +180,7 @@ body {
 }
 .navitemscnt {
   background-color: green;
+  border: 1px dashed magenta;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -173,7 +192,8 @@ body {
 }
 /* ///INTRODUCTION/// */
 .imgcnt {
-  background-color: purple;
+  background-color: yellow;
+  border: 1px dashed turquoise;
   padding: 5px 5px 5px 5px;
 }
 .introcnt {
@@ -183,24 +203,30 @@ body {
 }
 .titlecnt {
   background-color: red;
+  border: 1px dashed greenyellow;
   padding: 5px 5px 5px 5px;
 }
 .subtitlecnt {
-  background-color: orange;
+  background-color: blue;
+  border: 1px dashed orange;
   padding: 5px 5px 5px 5px;
 }
 .btncnt {
-  background-color: yellow;
+  background-color: green;
+  border: 1px dashed magenta;
   padding: 5px 5px 5px 5px;
   /* ///SKILLS/// */
 }
 .btncnt .skillsflexcnt {
-  background-color: magenta row-even();
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .btncnt .lstnupcnt {
-  background-color: mediumsea column-even();
+  background-color: blue;
 }
-.btncnt .stffcnt .stfflstcnt .stfflstcnt p {
+.btncnt .stffcnt row .stfflstcnt .stfflstcnt p {
   border: 1px solid lightgrey;
 }
 /* ///WORK HISTORY/// */
