@@ -134,29 +134,20 @@ html,
 body {
   height: 100%;
 }
-
-
 /* ------------------VARIABLES------------------- */
-
-@border: 1px solid black;
-@pad: 5px 5px 5px 5px;
-
 /* -------------------MIXINS--------------------- */
-
 .row-even {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-
 .column-even {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-
 /* ---------------STYLING STARTS HERE------------ */
 .page {
   margin: 5%;
@@ -169,20 +160,18 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-
 .navitemscnt {
   background-color: green;
-  .row-even();
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
 .navitemscnt .nava {
   padding: 5px 10px 5px 10px;
   text-decoration: none;
-
 }
-
 /* ///INTRODUCTION/// */
-
 .imgcnt {
   background-color: purple;
   padding: 5px 5px 5px 5px;
@@ -192,24 +181,26 @@ body {
   border-radius: 10px;
   padding: 20px 20px 20px 20px;
 }
-
 .titlecnt {
   background-color: red;
   padding: 5px 5px 5px 5px;
 }
-
 .subtitlecnt {
   background-color: orange;
   padding: 5px 5px 5px 5px;
 }
-
 .btncnt {
   background-color: yellow;
   padding: 5px 5px 5px 5px;
+  /* ///SKILLS/// */
 }
-
-/* ///SKILLS/// */
-
-
-
+.btncnt .skillsflexcnt {
+  background-color: magenta row-even();
+}
+.btncnt .lstnupcnt {
+  background-color: mediumsea column-even();
+}
+.btncnt .stffcnt .stfflstcnt .stfflstcnt p {
+  border: 1px solid lightgrey;
+}
 /* ///WORK HISTORY/// */
