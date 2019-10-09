@@ -226,6 +226,7 @@ body {
 .navitemscnt .nava {
   padding: 5px 10px 5px 10px;
   text-decoration: none;
+  color: black;
 }
 /* ///INTRODUCTION/// */
 .imgcnt {
@@ -243,7 +244,7 @@ body {
   }
 }
 .introcnt {
-  background-color: #97afbf;
+  background-color: rgba(186, 195, 200, 0.318);
   border-radius: 10px;
   padding: 20px 20px 20px 20px;
 }
