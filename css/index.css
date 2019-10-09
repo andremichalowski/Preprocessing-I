@@ -172,20 +172,16 @@ body {
 }
 /* ---------------STYLING STARTS HERE------------ */
 .page {
-  margin: 5%;
+  margin: 5% 5% 0% 5%;
 }
 /* ///NAVIGATION/// */
 .navbarcnt {
-  background-color: rgba(65, 65, 231, 0.822);
-  border: 1px dashed orange;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
 .navitemscnt {
-  background-color: rgba(24, 107, 24, 0.835);
-  border: 1px dashed magenta;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -197,42 +193,32 @@ body {
 }
 /* ///INTRODUCTION/// */
 .imgcnt {
-  background-color: rgba(167, 151, 64, 0.712);
-  border: 1px dashed turquoise;
   padding: 5px 5px 5px 5px;
 }
 .introcnt {
-  background-color: rgba(151, 175, 191, 0.318);
+  background-color: #97afbf;
   border-radius: 10px;
   padding: 20px 20px 20px 20px;
 }
 .titlecnt {
-  background-color: rgba(197, 96, 96, 0.76);
-  border: 1px dashed greenyellow;
   padding: 5px 5px 5px 5px;
 }
 .subtitlecnt {
-  background-color: rgba(65, 65, 231, 0.822);
-  border: 1px dashed orange;
   padding: 5px 5px 5px 5px;
 }
 .btncnt {
-  background-color: rgba(24, 107, 24, 0.835);
-  border: 1px dashed magenta;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 #teamup {
-  background-color: gray;
+  background-color: #727171;
   padding: 15px 15px 15px 15px;
   border-radius: 5px;
 }
 /* ///SKILLS/// */
 .skillsflexcnt {
-  background-color: rgba(65, 65, 231, 0.822);
-  border: 1px dashed orange;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -240,8 +226,6 @@ body {
   width: 100%;
 }
 .lstnupcnt {
-  background-color: rgba(24, 107, 24, 0.835);
-  border: 1px dashed magenta;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,25 +233,87 @@ body {
   width: 50%;
 }
 #listen {
-  padding: 2%;
+  padding: 5% 0px;
+  height: 90%;
+}
+.tsntxtcnt {
+  padding: 5%;
+  font-size: 1rem;
 }
 .stffcnt {
   width: 50%;
-  background-color: rgba(167, 151, 64, 0.712);
-  border: 1px dashed turquoise;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  border: 1px solid black;
+}
+.itmflx {
+  width: 100%;
+  padding: 3% 2%;
+}
+.stfflstcnt {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
   margin: 2%;
 }
-#stff {
-  padding: 5% 3% 5% 3%;
-}
-.stfflstcnt p {
-  width: 100%;
-  padding: 5% 5% 5% 5%;
+.stfflstcnt .itmflx {
   border-bottom: 1px solid black;
 }
 /* ///WORK HISTORY/// */
+.cnt4 h1 {
+  padding: 2% 0%;
+}
+.copyrightflxcnt {
+  padding: 3% 0% 0% 0%;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5%;
+  background-color: #727171;
+}
+.ttlbr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid rgba(173, 173, 173, 0.917);
+}
+.ttlbr p {
+  font-weight: bold;
+}
+.yr1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(231, 229, 229, 0.486);
+}
+.yr2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.yr3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(231, 229, 229, 0.486);
+}
+.yearColumn {
+  width: 10%;
+  padding: 2%;
+}
+.companyColumn {
+  width: 22%;
+  padding: 2%;
+}
+.titleColumn {
+  width: 32%;
+  padding: 2%;
+}
+.techColumn {
+  width: 22%;
+  padding: 2%;
+}
