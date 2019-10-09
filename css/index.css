@@ -170,22 +170,52 @@ body {
   background-color: rgba(197, 96, 96, 0.76);
   border: 1px dashed greenyellow;
 }
+.phone-mixin {
+  font-size: 0.5rem;
+  padding: 0.5% auto;
+}
+.tablet-mixin {
+  width: 100%;
+  font-size: 3rem;
+  padding: 4% auto;
+}
 /* ---------------STYLING STARTS HERE------------ */
 .page {
   margin: 5% 5% 0% 5%;
 }
 /* ///NAVIGATION/// */
 .navbarcnt {
+  padding: 0% 0% 2% 0%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .navbarcnt {
+    font-size: 0.5rem;
+    padding: 0.5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 .navitemscnt {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .navitemscnt {
+    font-size: 0.5rem;
+    padding: 0.5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 .navitemscnt .nava {
   padding: 5px 10px 5px 10px;
@@ -195,10 +225,31 @@ body {
 .imgcnt {
   padding: 5px 5px 5px 5px;
 }
+@media (max-width: 500px) {
+  .imgcnt {
+    font-size: 0.5rem;
+    padding: 0.5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 25%;
+  }
+}
 .introcnt {
   background-color: #97afbf;
   border-radius: 10px;
   padding: 20px 20px 20px 20px;
+}
+@media (max-width: 500px) {
+  .introcnt {
+    font-size: 0.5rem;
+    padding: 0.5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 .titlecnt {
   padding: 5px 5px 5px 5px;
@@ -225,6 +276,16 @@ body {
   align-items: center;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .skillsflexcnt {
+    font-size: 0.5rem;
+    padding: 0.5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 .lstnupcnt {
   display: flex;
   flex-direction: column;
@@ -234,11 +295,11 @@ body {
 }
 #listen {
   padding: 5% 0px;
+  margin: 2% 0%;
   height: 90%;
 }
 .tsntxtcnt {
   padding: 5%;
-  font-size: 1rem;
 }
 .stffcnt {
   width: 50%;
@@ -257,6 +318,12 @@ body {
   border-bottom: 1px solid black;
 }
 /* ///WORK HISTORY/// */
+@media (max-width: 500px) {
+  .cnt4 {
+    font-size: 0.5rem;
+    padding: 0.5% auto;
+  }
+}
 .cnt4 h1 {
   padding: 2% 0%;
 }

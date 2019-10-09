@@ -149,10 +149,13 @@ body {
 @spreadsheet-grey: rgba(231, 229, 229, 0.486);
 @button-grey: rgb(114, 113, 113);
 @container-grey: rgb(151, 175, 191, 0.318);
+@phone: ~"(max-width: 500px)";
+@tablet: ~"(max-width: 800px)";
 // @font-stack: ?;
 
 /* -------------------MIXINS--------------------- */
 
+//Flex-box://
 .row-even {
 	display: flex;
 	flex-direction: row;
@@ -174,6 +177,7 @@ body {
 	align-items: flex-start;
 }
 
+//Background-colors://
 .bkbl {
 	background-color: rgba(65, 65, 231, 0.822);
 	border: 1px dashed orange;
@@ -194,6 +198,19 @@ body {
 	border: 1px dashed greenyellow;
 }
 
+//Media query mixins://
+
+.phone-mixin {
+	font-size: .5rem;
+	padding: .5% auto;
+}
+
+.tablet-mixin {
+	width: 100%;
+	font-size: 3rem;
+	padding: 4% auto;
+}
+
 /* ---------------STYLING STARTS HERE------------ */
 .page {
 	margin: 5% 5% 0% 5%;
@@ -201,15 +218,26 @@ body {
 /* ///NAVIGATION/// */
 .navbarcnt {
 	// .bkbl();
+	padding: 0% 0% 2% 0%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
+	
+	@media @phone {
+		.phone-mixin();
+		.clm-even();
+	}
 }
 
 .navitemscnt {
 	// .bkgrn();
 	.row-even();
+	
+	@media @phone {
+		.phone-mixin();
+		.clm-even();
+	}
 }
 
 .navitemscnt .nava {
@@ -222,11 +250,22 @@ body {
 .imgcnt {
 	// .bkyllw();
 	padding: @pad;
+
+	@media @phone {
+		.phone-mixin();
+		.clm-even();
+		max-width: 25%;
+	}
 }
 .introcnt {
 	background-color: @container-grey;
 	border-radius: 10px;
 	padding: 20px 20px 20px 20px;
+
+	@media @phone {
+		.phone-mixin();
+		.clm-even();
+	}
 }
 
 .titlecnt {
@@ -255,6 +294,11 @@ body {
 	// .bkbl();
 	.row-even();
 	width: 100%;
+
+	@media @phone {
+		.phone-mixin();
+		.clm-even();
+	}
 }
 
 .lstnupcnt {
@@ -266,13 +310,13 @@ body {
 	#listen {
 		// .bkbl();
 		padding: 5% 0px;
+		margin: 2% 0%;
 		height: 90%;
 	}
 
 	.tsntxtcnt {
 		padding: 5%;
 		// .bkgrn();
-		font-size: 1rem;
 	}
 
 .stffcnt {
@@ -300,6 +344,11 @@ body {
 
 /* ///WORK HISTORY/// */
 
+.cnt4 {
+	@media @phone {
+		.phone-mixin();
+	}
+}
 .cnt4 h1 {
 	padding: 2% 0%;
 }
@@ -365,22 +414,7 @@ body {
 
 		///nesting
 
-		///media queries//
 
-		// Escaped values
-// @phone: ~"(max-width: 500px)";
-// @tablet: ~"(max-width: 800px)";
-// //Mixins
-// .phone-mixin {
-//   width: 100%;
-//   font-size: 2rem;
-//   padding: 2% auto;
-// }
-// .tablet-mixin {
-//   width: 100%;
-//   font-size: 3rem;
-//   padding: 4% auto;
-// }
 
 // //USAGE
 // h1 {
