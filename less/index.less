@@ -137,6 +137,8 @@ table {
 html,
 body {
 	height: 100%;
+	font: @mont;
+	font-family: @mont;
 }
 
 /* ------------------VARIABLES------------------- */
@@ -151,7 +153,7 @@ body {
 @container-grey: rgb(151, 175, 191, 0.318);
 @phone: ~"(max-width: 500px)";
 @tablet: ~"(max-width: 800px)";
-// @font-stack: ?;
+@mont: 'Raleway', sans-serif;
 
 /* -------------------MIXINS--------------------- */
 
@@ -175,6 +177,13 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+}
+
+//Font Stack//
+
+.title {
+	font-size: 18px;
+	font-weight: bold;
 }
 
 //Background-colors://
@@ -272,6 +281,13 @@ body {
 	// .bkrd();
 	padding: @pad;
 }
+	.titlecnt h1 {
+		margin: 2% 0%;
+	}
+	span {
+		font-size: 2rem;
+	}
+
 
 .subtitlecnt {
 	// .bkbl();
@@ -282,10 +298,14 @@ body {
 	// .bkgrn();
 	.clm-start();
 }
+
 #teamup {
 	background-color: @button-grey;
 	padding: 15px 15px 15px 15px;
+	margin: 5% 0px 5% 0px;
 	border-radius: 5px;
+	.title();
+	color: white;
 }
 
 /* ///SKILLS/// */
@@ -310,8 +330,9 @@ body {
 	#listen {
 		// .bkbl();
 		padding: 5% 0px;
-		margin: 2% 0%;
-		height: 90%;
+		margin: 5% 0%;
+		height: 70%;
+		.title();
 	}
 
 	.tsntxtcnt {
@@ -319,6 +340,9 @@ body {
 		// .bkgrn();
 	}
 
+.itmflx #stff {
+	.title();
+}
 .stffcnt {
 	// .bkyllw();
 	width: 50%;
@@ -351,6 +375,7 @@ body {
 }
 .cnt4 h1 {
 	padding: 2% 0%;
+	.title();
 }
 
 .copyrightflxcnt {
@@ -360,6 +385,7 @@ body {
 	.clm-even();
 	padding: 5%;
 	background-color: @button-grey;
+	color: white;
 }
 
 	// Flex Columns //
@@ -409,23 +435,3 @@ body {
 			padding: 2%;
 			// .bkrd();
 		}
-
-
-
-		///nesting
-
-
-
-// //USAGE
-// h1 {
-//   font-size: 4rem;
-//   padding: 10px;
-
-//     @media @tablet {
-//      .tablet-mixin();
-//     }
-  
-//     @media @phone {
-//       .phone-mixin();
-//     }
-// }

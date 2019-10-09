@@ -133,6 +133,8 @@ table {
 html,
 body {
   height: 100%;
+  font: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 /* ------------------VARIABLES------------------- */
 /* -------------------MIXINS--------------------- */
@@ -153,6 +155,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+.title {
+  font-size: 18px;
+  font-weight: bold;
 }
 .bkbl {
   background-color: rgba(65, 65, 231, 0.822);
@@ -254,6 +260,12 @@ body {
 .titlecnt {
   padding: 5px 5px 5px 5px;
 }
+.titlecnt h1 {
+  margin: 2% 0%;
+}
+span {
+  font-size: 2rem;
+}
 .subtitlecnt {
   padding: 5px 5px 5px 5px;
 }
@@ -266,7 +278,11 @@ body {
 #teamup {
   background-color: #727171;
   padding: 15px 15px 15px 15px;
+  margin: 5% 0px 5% 0px;
   border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
 }
 /* ///SKILLS/// */
 .skillsflexcnt {
@@ -295,11 +311,17 @@ body {
 }
 #listen {
   padding: 5% 0px;
-  margin: 2% 0%;
-  height: 90%;
+  margin: 5% 0%;
+  height: 70%;
+  font-size: 18px;
+  font-weight: bold;
 }
 .tsntxtcnt {
   padding: 5%;
+}
+.itmflx #stff {
+  font-size: 18px;
+  font-weight: bold;
 }
 .stffcnt {
   width: 50%;
@@ -326,6 +348,8 @@ body {
 }
 .cnt4 h1 {
   padding: 2% 0%;
+  font-size: 18px;
+  font-weight: bold;
 }
 .copyrightflxcnt {
   padding: 3% 0% 0% 0%;
@@ -337,6 +361,7 @@ body {
   align-items: center;
   padding: 5%;
   background-color: #727171;
+  color: white;
 }
 .ttlbr {
   display: flex;
