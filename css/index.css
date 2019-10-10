@@ -403,6 +403,12 @@ span {
   width: 10%;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  .yearColumn {
+    display: none;
+    width: 0%;
+  }
+}
 .companyColumn {
   width: 22%;
   padding: 2%;
