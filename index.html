@@ -5,7 +5,8 @@
   <meta charset="utf-8">
 
   <title>My Resume</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +15,115 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+
+<!-- MAIN PAGE CONTAINER -->
+<div class="page">
+  <!-- Navigation -->
+    <div class="navbarcnt">
+      <div class="navitemscnt">
+        <a href="#" class="nava" id="Home">Home</a>
+        <a href="#" class="nava" id="About">About</a>
+        <a href="#" class="nava" id="Portfolio">Portfolio</a>
+        <a href="#" class="nava" id="Contact" onclick="myFunction()">Contact</a>
+      </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          alert("andre.michalowski@gmail.com");
+        }
+        </script>
+
+  <!-- INTRODUCTION (Picture, title, and subtitle containers) -->
+  <div class="introcnt">
+    <div class="imgcnt">
+      <img src="IMG_1208.png"></img>
+    </div>
+    <div class="titlecnt">
+      <h1><span>Andre Michalowski - Web Dev</span></h1>
+      <h2>Technology is my Jam!</h2>
+    </div>
+    <div class="subtitlecnt">
+      <p>Occasionally I have time to work on side projects, if you're intereested, let me know by signing up on this website.</p>
+    </div>
+    <div class="btncnt">
+        <h1 class="button" id="teamup">Let's Team Up</h1>
+    </div>
+  </div>
+  <!-- SKILLS ("Listen-Up" Section and "Stuff I'm good at" Section) -->
+  <div class="skillsflexcnt">
+    <div class="lstnupcnt">
+      <div class="lsncnt">
+        <h1 id="listen">Giberish</h1>
+      </div>
+      <div class="tsntxtcnt">
+        <p> Maecenas tincidunt semper tortor, at efficitur urna elementum in. In hac habitasse platea dicturnst. Curabitur ornare dolor eu sem interdum posuere. Etiam vehicula sem ut nisi vulputate, eu feugiat diam facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed nec tempor nisl. Suspendisse et tristique ligula, non commodo ex. Praesent a vulpatate nibh. Nulla ligula diam, molestie sed vestibulum sit amet, consectetur nec nulla. Etiam nec egestas sapien, ac volutpat mi.</p>
+      </div>
+    </div>
+    <div class="stffcnt">
+      <div class="itmflx" id="stffflx">
+        <h1 id="stff">List of items:</h1>
+      </div>
+      <div class="stfflstcnt">
+        <div class="itmflx">
+          <p class="stfflstitm" id="s1">Disc Golf</p>
+        </div>
+        <div class="itmflx">
+          <p class="stfflstitm" id="s2">Coding up UI</p>
+        </div>
+        <div class="itmflx">
+          <p class="stfflstitm" id="s3">Playing lots of video games</p>
+        </div>
+        <div class="itmflx">
+          <p class="stfflstitm" id="s4">Using bootstrap grid</p>
+        </div>
+        <div class="itmflx">
+          <p class="stfflstitm" id="s5">Taking long naps</p>
+        </div>
+        </div>
+    </div>
+  </div>
+  <!-- WORK HISTORY -->
+  <div class="cnt4">
+    <div class="wrkhstryflxcnt">
+      <h1>Work History</h1>
+    </div>
+    <div class="ttlbr" id=workhistrow1>
+      <p class="yearColumn" id="wh411">Yrs</p>
+      <p class="companyColumn" id="wh412">Company</p>
+      <p class="titleColumn" id="wh413">Title</p>
+      <p class="techColumn" id="wh414">Tech Used</p>
+    </div>
+    <div class="yr1" id=workhistrow2>
+        <p class="yearColumn" id="wh421">1</p>
+        <p class="companyColumn" id="wh422">Apple</p>
+        <p class="titleColumn" id="wh423">Software Engineer</p>
+        <p class="techColumn" id="wh424">Swift</p>
+      </div>
+    <div class="yr2" id=workhistrow3>
+        <p class="yearColumn" id="wh431">2</p>
+        <p class="companyColumn" id="wh432">Microsoft</p>
+        <p class="titleColumn" id="wh434">Computer Scientist</p>
+        <p class="techColumn" id="wh435">.NET</p>
+      </div>
+    <div class="yr3" id=workhistrow4>
+        <p class="yearColumn" id="wh441">3</p>
+        <p class="companyColumn" id="wh442">Amazon</p>
+        <p class="titleColumn" id="wh443">Dev Ops</p>
+        <p class="techColumn" id="wh444">AWS</p>
+    </div>
+
+<!-- FOOTER -->
+
+<div class="copyrightflxcnt">
+  <h3 class="copyright">Copyright Awesomeness 2018</h3>
+</div>
+
+  </div>
+
+
+</div>
+
+</div>
 </body>
 </html>
